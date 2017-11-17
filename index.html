@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan 1</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="asset/sample-logo.png" alt="">
+            </div>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="title">Featured Post</div>
+            <div class="text-content">
+                <div id="a1" class="paragraph">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h5>copyright &copy; 2016 by HACKFOX</h5>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script>
+        // Data Array
+            paragraphContent =  [{
+                paragraphTitle: "Lorem Post 1",
+                paragraphText: "Lorem Ipsum Dolor Sit Amet, mea te verear signiferumque, per illum labores ne. Blandit omnesque scripserit pri ex, et pri dicant eirmod deserunt. Aeque perpetua ea nec. Sit erant patrioque delicatissimi ut. Et sea quem sint, nam in minim voluptatibus. Etiam placerat eam in.",
+            },
+            {
+                paragraphTitle: "Lorem Post 2",
+                paragraphText: "Lorem Ipsum Dolor Sit Amet, mea te verear signiferumque, per illum labores ne. Blandit omnesque scripserit pri ex, et pri dicant eirmod deserunt. Aeque perpetua ea nec. Sit erant patrioque delicatissimi ut. Et sea quem sint, nam in minim voluptatibus. Etiam placerat eam in.",
+            },
+            {
+                paragraphTitle: "Lorem Post 3",
+                paragraphText: "Lorem Ipsum Dolor Sit Amet, mea te verear signiferumque, per illum labores ne. Blandit omnesque scripserit pri ex, et pri dicant eirmod deserunt. Aeque perpetua ea nec. Sit erant patrioque delicatissimi ut. Et sea quem sint, nam in minim voluptatibus. Etiam placerat eam in.",
+            },
+            {
+                paragraphTitle: "Lorem Post 4",
+                paragraphText: "Lorem Ipsum Dolor Sit Amet, mea te verear signiferumque, per illum labores ne. Blandit omnesque scripserit pri ex, et pri dicant eirmod deserunt. Aeque perpetua ea nec. Sit erant patrioque delicatissimi ut. Et sea quem sint, nam in minim voluptatibus. Etiam placerat eam in.",
+            }];
+            paragraphContent.forEach(function(pC){
+                pC = `<div class="paragraph-title"><a href="#">${pC.paragraphTitle}</a></div>
+                    <div class="paragraph-text">${pC.paragraphText}</div>
+                    <hr>`
+                $('#a1').append(pC);
+            });
+    </script>    
+</body>
+</html>
